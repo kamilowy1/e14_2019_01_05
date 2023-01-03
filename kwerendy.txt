@@ -1,0 +1,4 @@
+1. SELECT `nazwa`, `potoczna` FROM `grzyby` WHERE `jadalny`='1';
+2. SELECT grzyby.nazwa, grzyby.potoczna, rodzina.nazwa FROM grzyby, rodzina, potrawy WHERE grzyby.rodzina_id = rodzina.id AND grzyby.potrawy_id = potrawy.id AND potrawy.nazwa = 'sos';
+3. SELECT `nazwa_pliku`, `potoczna` FROM `grzyby`;
+4. ALTER TABLE `rodzina` ADD `opis` TEXT;
